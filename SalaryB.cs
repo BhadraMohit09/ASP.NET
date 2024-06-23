@@ -14,9 +14,9 @@ namespace Lab1_MAB
     public class SalaryB : Gross
     {
         // Data members
-        public double HRA { get; set; }
-        public double TA { get; set; }
-        public double DA { get; set; }
+        public double HRA;
+        public double TA; 
+        public double DA;
         public SalaryB(double hra, double ta, double da)
         {
             HRA = hra;
