@@ -25,7 +25,11 @@ namespace Lab1_MAB
 
         public void Display()
         {
-            Console.WriteLine(this.Enrollment);
+            Console.WriteLine("Enrollment # => " + this.Enrollment);
+            Console.WriteLine("Name is => " + this.Name);
+            Console.WriteLine("Semester => " + this.Semester);
+            Console.WriteLine("CPI => " + this.CPI);
+            Console.WriteLine("SPI => " + this.SPI);
         }
     }
 
