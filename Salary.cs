@@ -8,10 +8,10 @@ namespace Lab1_MAB
 {
     internal class Salary
     {
-        public double Basic { get; set; }
-        public double TA { get; set; }
-        public double DA { get; set; }
-        public double HRA { get; set; }
+        public double Basic;
+        public double TA;
+        public double DA;
+        public double HRA;
         public Salary(double basic, double ta, double da = 0.1, double hra = 0.2)
         {
             Basic = basic;
