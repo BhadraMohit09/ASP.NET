@@ -8,9 +8,9 @@ namespace Lab1_MAB
 {
     internal class Distance
     {
-        public double Dist1 { get; set; }
-        public double Dist2 { get; set; }
-        public double Dist3 { get; set; }
+        public double Dist1;
+        public double Dist2;
+        public double Dist3;
         public Distance(double dist1, double dist2)
         {
             Dist1 = dist1;
