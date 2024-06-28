@@ -1,53 +1,40 @@
-﻿using Lab1_MAB;
+﻿using Lab3_MAB;
 using System;
-using System.Security.AccessControl;
-
+using System.Runtime.CompilerServices;
 public class Program
 {
     public static void Main()
     {
-        //Candidate c1 = new Candidate();
-        //c1.getData();
-        //c1.Display();
-        
-        //Staff s1 = new Staff();
-        //s1.getData();
-        //s1.Display();
-        
-        //Account a1 = new Account();
-        //a1.getData();
-        //Console.WriteLine("==========");
-        //a1.Display();
-        
-        //Student s1 = new Student(101,"qwerty",5,9.9,9.9);
-        //s1.Display();
-        
-        //Rectangle r1 = new Rectangle(10,30);
-        //r1.evaluate();
-        
-        //Account_Details d1 = new Account_Details();
-        
-        //Interest i1 = new Interest();
-        //i1.GetData();
-        //i1.Display();
-        
-        //Salary s1 = new Salary(100,25.32);
-        //s1.CalculateTotalSalary();
-        
-        //Distance d1 = new Distance(123.5,456.725);
-        //d1.AddDistances();
-        //d1.DisplayAddition();
-        
-        //Table t1 = new Table();
-        //t1.DisplayTableDetails();
-        
-        //Employee e1 = new Employee
-        //{
-        //    Name = "A"
-        //};
-        //SalaryB s1 = new SalaryB(1000,2000,3000);
-        //e1.basic_sal(5000);
-        //s1.Disp_sal();
-        //s1.Gross_sal();
+        //Lab3A1 a1 = new Lab3A1();
+        //Lab3A1 a2 = new Lab3A1();
+        //int resultA = a1.Addition(20, 30);
+        //float resultB = a2.Addition(20, 30);
+
+        //Console.WriteLine("Addition of Integers ==> " + resultA);
+
+        //Console.WriteLine("Addition of Floats ==> " + resultB);
+
+        //Lab3A2 a1 = new Lab3A2();
+        //double resultA = a1.Area(5);
+        //double resultB = a1.Area(5,10);
+
+        //Console.WriteLine("Area of Square ==> " + resultA);
+
+        //Console.WriteLine("Area of Rectangle ==> " + resultB);
+
+        //HDFC h1 = new HDFC();
+        //double resultA = h1.CalculateInterest(10, 20, 30);
+
+        //SBI s1 = new SBI();
+        //double resultB = s1.CalculateInterest(20, 30, 40);
+
+        //ICICI i1 = new ICICI();
+        //double resultC = i1.CalculateInterest(30, 40, 50);
+
+        //Console.WriteLine("Interest Rate for HDFC ==> " + resultA);
+        //Console.WriteLine("Interest Rate for SBI ==> " + resultB);
+        //Console.WriteLine("Interest Rate for ICICI ==> " + resultC);
+
+         
     }
 }
