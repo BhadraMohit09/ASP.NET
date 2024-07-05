@@ -117,6 +117,7 @@ WHERE ProductName = 'Grandma''s Boysenberry Spread';
 DELETE FROM [Order Details] 
 WHERE OrderID = 10248;
 SELECT * FROM [Order Details];
+
 --Query 20
 SELECT 
     ProductName,
