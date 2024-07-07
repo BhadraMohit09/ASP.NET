@@ -44,18 +44,14 @@ SELECT ContactName, Address FROM Customers WHERE CustomerID IN (
 
 --Query 11
 SELECT * FROM Suppliers;
-SELECT CompanyName, ContactName, ContactTitle, Region FROM Suppliers WHERE Region IS NOT NULL
-SELECT * FROM Customers WHERE CustomerID IN (
-	SELECT CustomerID FROM Orders WHERE EmployeeID IN (
-		SELECT EmployeeID FROM Employees WHERE EmployeeID IN (
-			SELECT EmployeeID FROM EmployeeTerritories WHERE TerritoryID IN (
-				SELECT TerritoryID FROM Territories WHERE RegionID IN(
-					SELECT RegionID FROM Region
-				)
-			)
-		)
-	)
-)
+SELECT CompanyName,ContactName,ContactTitle,Region.RegionDescription FROM Suppliers JOIN 
+	Products ON Products.SupplierID=Suppliers.SupplierID JOIN 
+		[Order Details] ON [Order Details].ProductID=Products.ProductID 
+			JOIN Orders ON Orders.OrderID = [Order Details].OrderID 
+				JOIN Employees ON Employees.EmployeeID = Orders.EmployeeID 
+					JOIN EmployeeTerritories ON EmployeeTerritories.EmployeeID = Employees.EmployeeID 
+						JOIN Territories ON Territories.TerritoryID = EmployeeTerritories.TerritoryID 
+							JOIN Region ON Territories.RegionID=Region.RegionID
 
 SELECT * FROM Employees;
 SELECT * FROM Orders;
