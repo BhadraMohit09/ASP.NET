@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+}
+.HRBorder{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.RowColor{
+    background-color: rgb(184, 184, 184);
+}
+input[type="text"]{
+    background-color: rgb(219, 219, 219);
+    border: 1px solid gray;
+}
+input[type="tel"]{
+    background-color: rgb(219, 219, 219);
+    border: 1px solid gray;
+}
+input[type="email"]{
+    background-color: rgb(219, 219, 219);
+    border: 1px solid gray;
+}
+input[type="number"]{
+    background-color: rgb(219, 219, 219);
+    border: 1px solid gray;
+}
