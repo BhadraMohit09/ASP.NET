@@ -1,0 +1,25 @@
+﻿@model ProductModel
+
+<main id="main" class="main">
+    @using (Html.BeginForm())
+    {
+        <h3 class="text-center">@Html.Label("Product Details")</h3>
+        <p><span class="text-danger">*</span>@Html.LabelFor(m => m.ProductName, "Enter Product Name", new { @class = "fs-5" })</p>
+        <p>@Html.TextBoxFor(m => m.ProductName, "Product Name", new {@class = "form-control w-75 p-2" })</p>
+
+        <p><span class="text-danger">*</span>@Html.LabelFor(m => m.ProductPrice, "Enter Price", new { @class = "fs-5" })</p>
+        <p>@Html.TextBoxFor(m => m.ProductPrice, "Price", new {@class = "form-control w-75 p-2"})</p>
+
+        <p><span class="text-danger">*</span>@Html.LabelFor(m => m.ProductDescription, "Enter Description", new { @class = "fs-5" })</p>
+        <p>@Html.TextAreaFor(m => m.ProductDescription, new { @class = "form-control w-75" })</p>
+
+
+        <p><span class="text-danger">*</span>@Html.LabelFor(m => m.ProductCode, "Enter Description", new { @class = "fs-5" })</p>
+        <p>@Html.TextBoxFor(m => m.ProductCode, new { @class = "form-control w-75 p-2" })</p>
+
+
+        <p><span class="text-danger">*</span>@Html.LabelFor(m => m.UserId, "Enter User ID", new { @class = "fs-5" })</p>
+        <p>@Html.DropDownListFor(m => m.UserId,new SelectList(new []{"1", "2", "3"}),"UserID", new {@class = "form-control w-25 p-2"})</p>
+        <button class="btn btn-secondary w-25">Submit</button>
+    }
+</main>
